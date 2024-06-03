@@ -1,3 +1,4 @@
+#include "http.h"
 #include "tcp.h"
 
 /*
@@ -10,6 +11,8 @@ int main() {
 
     tcp ihatethisshit = setup_tcp();
 
-    run_tcp(ihatethisshit);
 
+
+
+    run_tcp(ihatethisshit, http_connection);
 }
